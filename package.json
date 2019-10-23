@@ -1,0 +1,54 @@
+{
+  "name": "testsvg",
+  "version": "0.0.0",
+  "browser": {
+    "./getPaper.js": "./getPaper.browser.js"
+  },
+  "description": "",
+  "main": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "test": "npm run test-coverage && npm run eslint",
+    "test-coverage": "jest --coverage",
+    "test-only": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheminfo/testsvg.git"
+  },
+  "keywords": [],
+  "author": "Luc Patiny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo/testsvg/issues"
+  },
+  "homepage": "https://github.com/cheminfo/testsvg#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-cheminfo": "^2.0.3",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.20.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.0.13",
+    "svgdom": "0.0.20"
+  }
+}
