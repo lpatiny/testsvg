@@ -127,31 +127,18 @@ module.exports = testSVG;
 "use strict";
 
 
-const window = __webpack_require__(2);
-
-const document = window.document;
-
 const {
-  SVG,
-  registerWindow
-} = __webpack_require__(3);
-
-registerWindow(window, document);
+  SVG
+} = __webpack_require__(2);
 
 function getPaper() {
-  return SVG(document.documentElement);
+  return SVG();
 }
 
 module.exports = getPaper;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -2,7 +2,7 @@
   "name": "testsvg",
   "version": "0.0.0",
   "browser": {
-    "./getPaper.js": "./getPaper.browser.js"
+    "./src/getPaper.js": "./src/getPaper.browser.js"
   },
   "description": "",
   "main": "src/index.js",

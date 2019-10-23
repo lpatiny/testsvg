@@ -3,7 +3,7 @@
 const { SVG } = require('@svgdotjs/svg.js');
 
 function getPaper() {
-  const paper = SVG();
+  return SVG();
 }
 
-module.exports = getPaper();
+module.exports = getPaper;
